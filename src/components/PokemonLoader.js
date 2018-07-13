@@ -3,7 +3,6 @@ import {
   View,
   Text,
   Image,
-  Button,
   ActivityIndicator,
   TouchableOpacity
 } from "react-native";
@@ -19,7 +18,7 @@ class PokemonLoader extends Component {
 
     return (
       <View style={styles.textContainer}>
-        <TouchableOpacity onPress={requestPokemon}>
+        <TouchableOpacity onPress={requestPokemon} testID="action_button">
           <View style={styles.content}>
             {pokemon && <Card data={pokemon} fetching={fetching} />}
 
@@ -29,12 +28,17 @@ class PokemonLoader extends Component {
                   source={pokeball}
                   resizeMode={"contain"}
                   style={styles.pokeBall}
+                  testID="pokeball_image"
                 />
               )}
 
             {fetching && (
               <View style={styles.loaderContainer}>
-                <ActivityIndicator size="large" color="#0000ff" />
+                <ActivityIndicator
+                  size="large"
+                  color="#0000ff"
+                  testID="loader"
+                />
               </View>
             )}
 

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, Text, Image, ActivityIndicator } from "react-native";
+import { View, Text, Image } from "react-native";
 
 export default class Card extends Component {
   render() {
@@ -15,19 +15,24 @@ export default class Card extends Component {
                 style={styles.cardImage}
                 source={{ uri: image }}
                 resizeMode={"cover"}
+                testID="pokemon_sprite"
               />
             </View>
             <View style={styles.titleContainer}>
-              <Text style={styles.title}>{name}</Text>
+              <Text style={styles.title} testID="pokemon_name">
+                {name}
+              </Text>
             </View>
             {types.length && (
-              <View style={styles.typesContainer}>
+              <View style={styles.typesContainer} testID="pokemon_types">
                 {this.renderTypes(types)}
               </View>
             )}
 
             <View style={styles.descriptionContainer}>
-              <Text style={styles.description}>{description}</Text>
+              <Text style={styles.description} testID="pokemon_description">
+                {description}
+              </Text>
             </View>
           </View>
         )}
@@ -37,7 +42,6 @@ export default class Card extends Component {
 
   renderTypes = types => {
     return types.map(({ type }) => {
-      // before it was: type and not ({ type })
       return (
         <View style={[styles[type.name], styles.type]} key={type.name}>
           <Text style={styles.typeText}>{type.name}</Text>
