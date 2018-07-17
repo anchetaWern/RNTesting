@@ -6,8 +6,10 @@ _Note: the React Native code in this repo may be a little bit outdated and won't
 
 ## Prerequisites
 
--   React Native development environment
+-   React Native development environment (Android Studio or Xcode)
 -   [Yarn](https://yarnpkg.com)
+-   Detox prerequisites installed (detox-cli, applesimutils for iOS)
+-   Android emulator/Genymotion virtual device (for Android), iOS simulator
 
 ## Getting Started
 
