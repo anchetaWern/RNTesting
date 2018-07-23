@@ -4,6 +4,8 @@ A sample React Native app showing how to implement snapshot and end-to-end testi
 
 This branch contains the starter app without any test code in it. Switch to either `testing` or `master` branch to see the testing code.
 
+Full tutorial is available at: [http://blog.pusher.com/react-native-testing/](http://blog.pusher.com/react-native-testing/)
+
 _Note: the React Native code in this repo may be a little bit outdated and won't run immediately after you've followed the setup instructions. Be sure to refactor the code to use the more recent React Native syntax if it doesn't run for you._
 
 ## Prerequisites
