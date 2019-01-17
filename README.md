@@ -25,6 +25,7 @@ git clone https://github.com/anchetaWern/RNTesting.git
 ```
 cd RNTesting
 npm install
+react-native eject
 ```
 
 3.  Run the app:
