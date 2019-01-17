@@ -26,6 +26,7 @@ git clone https://github.com/anchetaWern/RNTesting.git
 ```
 cd RNTesting
 yarn install
+react-native eject
 ```
 
 3.  Run the tests:
